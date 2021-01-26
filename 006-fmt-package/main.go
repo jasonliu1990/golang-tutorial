@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 // https://golang.org/pkg/fmt/
+// http://c.biancheng.net/view/41.html
 //％v按值的本來值輸出
 //％+ v在％v基礎上，對結構體分段名和值進行展開
 //％＃v輸出Go語言語法格式的值
