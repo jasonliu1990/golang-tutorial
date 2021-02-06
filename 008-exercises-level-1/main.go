@@ -35,13 +35,40 @@ func ex1(){
 var x2 int
 var y2 string
 var z2 bool
+func ex2(){
+	fmt.Println(x2)
+	fmt.Println(y2)
+	fmt.Println(z2)
+}
+//ex3
+//Using the code from the previous exercise,
+//1. At the package level scope, assign the following values to the three
+//   variables
+//   a. for x assign 42
+//   b. for y assign “James Bond”
+//   c. for z assign true
+//2. in func main
+//   a. use fmt.Sprintf to print all of the VALUES to one single string.
+//      ASSIGN the returned value of TYPE string using the short declaration
+//      operator to a VARIABLE with the IDENTIFIER “s”
+//   b. print out the value stored by variable “s”
+var x3 int = 42
+var y3 string = "James Bond"
+var z3 bool = true
+func ex3(){
+	s := fmt.Sprintf("%v %v %v", x3, y3, z3)
+	fmt.Println(s)
+}
+//ex4
+
+
 
 func main() {
 	fmt.Println("====== ex1 ======")
 	ex1()
 	fmt.Println("====== ex2 ======")
-	fmt.Println(x2)
-	fmt.Println(y2)
-	fmt.Println(z2)
+	ex2()
+	fmt.Println("====== ex3 ======")
+	ex3()
 
 }
