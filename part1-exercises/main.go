@@ -60,6 +60,49 @@ func ex3(){
 	fmt.Println(s)
 }
 //ex4
+//1. Create your own type. Have the underlying type be an int.
+//2. create a VARIABLE of your new TYPE with the IDENTIFIER “x”
+//   using the “VAR” keyword
+//3. in func main
+//   a. print out the value of the variable “x”
+//   b. print out the type of the variable “x”
+//   c. assign 42 to the VARIABLE “x” using the “=” OPERATOR
+//   d. print out the value of the variable “x”
+
+type mytype int
+var x4 mytype
+func ex4(){
+	fmt.Println(x4)
+	fmt.Printf("%T\n", x4)
+	x4 = 42
+	fmt.Println(x4)
+}
+
+//ex5
+//1. Building on the code from the previous example
+//   at the package level scope, using the “var” keyword,
+//   create a VARIABLE with the IDENTIFIER “y”.
+//   The variable should be of the UNDERLYING TYPE of your custom TYPE “x”
+//2. in func main
+//    a. this should already be done
+//		i. print out the value of the variable “x”
+//		ii. print out the type of the variable “x”
+//		iii. assign your own VALUE to the VARIABLE “x” using the “=” OPERATOR
+//		iv. print out the value of the variable “x”
+//    b. now do this
+//		i. now use CONVERSION to convert the TYPE of the VALUE stored in “x” to the
+//	       UNDERLYING TYPE
+//			1. then use the “=” operator to ASSIGN that value to “y”
+//			2. print out the value stored in “y”
+//			3. print out the type of “y”
+var x5 mytype
+var y5 int
+func ex5(){
+	x5 = 42
+	y5 = int(x5)
+	fmt.Println(y5)
+	fmt.Printf("%T\n", y5)
+}
 
 
 
@@ -70,5 +113,8 @@ func main() {
 	ex2()
 	fmt.Println("====== ex3 ======")
 	ex3()
-
+	fmt.Println("====== ex4 ======")
+	ex4()
+	fmt.Println("====== ex5 ======")
+	ex5()
 }
